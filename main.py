@@ -565,7 +565,7 @@ with tabs[3]:
                     for t in topics:
                         match = member_progress[member_progress["topic"] == t]
 
-                        if not match.empty and match.iloc[0]["status"] == "Done":
+                        if not match.empty and match.iloc[0]["status"] == "🟢Done":
                             done_count += 1
 
                     percent = int((done_count / len(topics)) * 100)
